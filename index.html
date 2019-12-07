@@ -34,6 +34,7 @@
 
 		};
 
+
 		/**
 		* Randomly shuffle words in the phrase:
 		* "it really do be like that sometimes". 
@@ -49,8 +50,18 @@
 		for (idx in arr) {
 		  new_phrase+=arr[idx] + " ";
 		}
+
 		document.getElementById('irdblts').innerHTML = new_phrase;
 		
+		function changeBackground(color) {
+   			document.body.style.background = color;
+		}
+
+		var colours = "red green yellow blue pink purple orange"
+		var cols = colours.split(" ")
+		shuffle(cols)
+
+		window.addEventListener("load",function() { changeBackground(cols[0]) });
 		</script>
 	</footer>
 </body>
