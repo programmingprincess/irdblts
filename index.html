@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<h2 id="irdblts">it really do be like that sometimes</h2>
+	<footer>
+		<script>
+		/**
+		* Randomly shuffle an array
+		* https://stackoverflow.com/a/2450976/1293256
+		* @param  {Array} array The array to shuffle
+		* @return {String}      The first item in the shuffled array
+		*/
+		var shuffle = function (array) {
+
+		  var currentIndex = array.length;
+		  var temporaryValue, randomIndex;
+
+		  // While there remain elements to shuffle...
+		  while (0 !== currentIndex) {
+		      // Pick a remaining element...
+		      randomIndex = Math.floor(Math.random() * currentIndex);
+		      currentIndex -= 1;
+
+		      // And swap it with the current element.
+		      temporaryValue = array[currentIndex];
+		      array[currentIndex] = array[randomIndex];
+		      array[randomIndex] = temporaryValue;
+		  }
+
+		  return array;
+
+		};
+
+		/**
+		* Randomly shuffle words in the phrase:
+		* "it really do be like that sometimes". 
+		* Why?
+		* Because it be like that sometimes. 
+		*/
+
+		var phrase="it really do be like that sometimes";
+		var arr=phrase.split(" ");
+		var new_phrase="";
+
+		for (idx in arr) {
+		  new_phrase+=arr[idx] + " ";
+		}
+		document.getElementById('irdblts').innerHTML = new_phrase;
+		
+		</script>
+	</footer>
+</body>
+</html>
