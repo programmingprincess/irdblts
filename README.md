@@ -5,3 +5,6 @@ Clone to your local machine
 Run: 
 
 `bash do.be`
+
+
+Alternatively, access it online at: http://jiaqiwu.com/irdblts
