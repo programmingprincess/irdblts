@@ -1,10 +1,30 @@
+
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
+	<meta charset="utf-8">
+	
+	<meta name="author" content="Jiaqi Wu">
+	<meta name="description" content="It really do be like that sometimes">
+	<meta name="keywords" content="it, really, do, be, like, that, sometimes">
+
+	<meta property="og:type" content="meme">
+	<meta property="og:description" content="It really do be like that sometimes">
+
+	<style>
+		#irdblts {
+			margin: 30px 25px ;
+			display: inline-block;
+			font-size: 5vw;
+		}
+	</style>
+
+	<title id="irdblts_title">it really do be like that sometimes</title>
 </head>
 <body>
-	<h2 id="irdblts">it really do be like that sometimes</h2>
+	<div class="container">
+		<h2 id="irdblts">it really do be like that sometimes</h2>
+	</div>
 	<footer>
 		<script>
 		/**
@@ -34,7 +54,6 @@
 
 		};
 
-
 		/**
 		* Randomly shuffle words in the phrase:
 		* "it really do be like that sometimes". 
@@ -52,9 +71,16 @@
 		}
 
 		document.getElementById('irdblts').innerHTML = new_phrase;
+
+		document.getElementById('irdblts_title').innerHTML = new_phrase;
+
 		
 		function changeBackground(color) {
+   			// change background color
    			document.body.style.background = color;
+
+   			// change text color 
+   			// document.getElementById('irdblts').style.color=color;
 		}
 
 		var colours = "red green yellow blue pink purple orange"
